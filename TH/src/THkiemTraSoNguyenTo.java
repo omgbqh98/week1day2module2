@@ -9,14 +9,15 @@ boolean check =true;
         if(number<2){
             check = false;
         }else {
-            for (int i = 2; i <= Math.sqrt(number) ; i++) {
-                if(number%i==0){
+            int i = 2;
+            while (i <= Math.sqrt(number)) {
+                if (number % i == 0) {
                     check = false;
-
+                    break;
                 }else {
-                    check =true;
-
+                    check=true;
                 }
+                i++;
         }
         }
         if(check){
